@@ -1,0 +1,106 @@
+<div class="container">
+  <div class="row">
+     <div class="col-md-6">
+         <div *ngIf="profile">
+             <div>
+                <img  src="https://avatars1.githubusercontent.com/u/71265008?v=4" width="320" height="320">
+                  <div>
+                         
+                     <span><br>Student at Moringa school</span>
+                     <span><br>Location : Kigali</span><br><br>
+                     <!-- <span> Hireable status: Hired</span> -->
+                  </div>
+           
+                
+                  <div class="col-sm-6">
+                     <div>
+                       <p>
+                        <!-- <span *ngIf="profile.location"><br>place : {{profile.location}}</span><br> -->
+                        <span class="label label-default">{{profile.public_repos}} public_Repos</span>
+                        <br><span class="label label-success">{{profile.followers}} followers</span>
+                        <br><span class="label label-default">{{profile.following}} following</span><br> <br>
+
+                           <!-- <span appStrikethrough>18 public_Repos</span>
+                           <br><span>0 followers</span>
+                           <br><span>0 following</span><br> <br> -->
+                           <!-- <br><span>0 public_gists</span> -->
+                           <a href="{{profile.html_url}}" target="_blank" class="btn btn-success"> View Profile on GitHub</a>
+                        </p>
+                     </div>
+                  </div>
+
+             </div>  
+          </div>
+         </div>
+               <div class="col-md-6">
+                       <h3>Github Search</h3>
+                       <p>Welcome to Github search! a page where you can visit any github account you want, to see the Repositories it has, and other information just right here, through our search page. </p>
+                    
+                       
+               </div>
+   </div>
+          
+</div>
+
+
+<!-- <div class="container">
+  <div *ngIf="profile">
+      
+        <div class="panel-body">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <br>
+                            <form>
+                                    <div>
+                                            <input type="text" style="width:60% ;margin-left: 2%" class="form-control" placeholder="Enter Username" [(ngModel)]="username" name="username"
+                                            (keyup)="findProfile()">
+                                        
+                                
+                                    </div>
+                                </form>
+                    </div>
+                    <div class="col-md-4" >
+                        <br>
+                        <img src="{{profile.avatar_url}}" style="height: 300px; width: 300px ;margin-left: 2%"  alt="picture">
+                        <br>
+                        <br>
+                        <p>
+                                <span class="btn btn-outline-success btn-sm"> Repository {{profile.public_repos}}</span><br><br>
+                                <span class="btn btn-outline-primary btn-sm"> Followers {{profile.followers_url}}</span><br><br>
+                                <span class="btn btn-outline-primary btn-sm"> Following {{profile.following_url}}</span>
+                                
+                            </p>
+                    </div>
+                    <div class="col-md-4">
+                        <br>
+                        <ul class="list-group" >
+                            <li class="list-group-item" *ngIf="profile.name"><strong>Name: {{profile.name}}</strong></li>
+                            <li class="list-group-item" *ngIf="profile.blog"><strong>Bio: {{profile.bio}}</strong></li>
+                            <li class="list-group-item" *ngIf="profile.location"><strong>Location: {{profile.location}}</strong></li>
+                            <li class="list-group-item" *ngIf="profile.created_at"><strong>Created on : {{profile.created_at|date |uppercase}}</strong></li>
+                         <a href="{{profile.html_url}}" target="_blank" class="btn btn-outline-success btn-sm"> View Profile on GitHub</a>
+                        </ul>
+                    </div>
+                    
+            </div>
+        </div>
+        <br>
+        <br>
+            <h3 class="panel-title" style="text-align: center; font-family:sans-serif"><strong> List of all Repositories</strong></h3>
+            <div class="jumbotron">
+            <div class="row">            
+              
+                    <br>
+                    <br>         
+                <div class="col-md-4" *ngFor="let repo of repos">
+                    <p>{{repo.name}}<a href="{{profile.html_url}}" target="_blank"
+                            class="btn btn-sm btn-success pull-right">View more</a></p>
+                            <br>
+                    <p>{{repo.description}}</p>
+                </div>
+            </div>  
+            </div>
+        </div>
+    </div>
+    </div>  -->
