@@ -8,5 +8,4 @@ export class StrikethroughDirective {
   constructor(private elem:ElementRef) { 
     this.elem.nativeElement.style.textDecoration='underline overline';
   }
-
 }
