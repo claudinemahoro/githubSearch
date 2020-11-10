@@ -44,14 +44,14 @@
         </div>
      </div>
   
-            <div class="col-md-7">
+     <div class="col-md-7">
                 <div *ngFor="let repo of repos" class="card">
                     <p class="card-header">
                       {{repo.name| uppercase}} <a href="{{repo.html_url}}" target="_blank" class="btn btn-info">More Info</a>
                      <br>This repo was created at {{repo.created_at | date}}</p>
-                       </div>
+                 </div>
             
-      </div>
+     </div>
  
   </div>
       <footer class="blockquote-footer">Claudine@2020</footer>
