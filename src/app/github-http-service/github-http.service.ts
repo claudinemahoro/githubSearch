@@ -49,7 +49,6 @@ export class GithubHttpService {
             }
         )
     })
-
     return promise
   }
 }
