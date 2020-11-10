@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
+# Description
+Through this project,a user can search a github account and get its information displayed and all the repositories it holds. And they can be directed to that github account via this project. My github account informtion is also displayed on the profile page.
+# Author
+Claudine MAHORO
+claudinemahoro @github
+# Link to live server
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
